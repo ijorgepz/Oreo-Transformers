@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="ID Interactive" />
+	<meta name="description" content="" />
+	<title>Oreo | Transformers</title>
+	<script>document.documentElement.className = 'js';</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<!--[if lte IE 8]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<noscript>
+		<strong>Warning!</strong>
+		Your browser does not support HTML5 so some elements on this page are simulated using JScript. Unfortunately your browser has JScript disabled. Please enable it in order to display this page.
+	</noscript>
+	<![endif]-->
+	<!-- Disable image toolbar in IE6 -->
+	<!--[if lte IE 6]><meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/jquery.parallax.js"></script>
+	<script src="js/main.js"></script>	
+	<!-- Enable png transparency in IE6 -->
+	<!--[if lt IE 7]>
+	<script type="text/javascript" src="js/jquery.ifixpng.js"></script>
+	<script type="text/javascript">jQuery(document).ready(function(){ jQuery("img[src$='png']".ifixpng(); });</script>
+	<![endif]-->
+</head>
+
+
+
+
+<body id="port">
+	<!-- A este div se añade la clase "inside" para las internas  -->
+	<div class="transformers inside"></div>
+	<!-- A este div se añade la clase "inside" para las internas  -->
+
+
+<!-- HEADER -->
+	<div class="header">
+		<div class="container">
+			<div class="OreoLogo"><a href="#"></a></div>
+			<div class="menu">
+				<ul class="mainMenu">
+					<li class="enterCode"><a href="#">INGRESA TUS CÓDIGOS</a></li>
+					<li class="awards"><a href="#">PREMIOS</a></li>
+					<li class="faq"><a href="#">FAQ</a></li>
+				</ul>
+				<div class="transformersLogo"><a href="#"></a></div>
+			</div>
+			<div class="infoandSocial">
+				<div class="userSection">
+					<div class="greeting"><span class="label">Hola: </span><span class="nameUser">Jorge Peña</span></div>
+					<div class="logout">cerrar sesión</div>
+				</div>
+				<div class="iconSection">
+				<div class="flags"><img src="images/flags/peru.png" /></div>
+				<div class="facebook"><a href="https://www.facebook.com/oreo" target="_blank"></a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- HEADER -->
+
+
+<!-- ALERTA MENOR 18 AÑOS  -->
+
+	<div class="overlay">
+		<div class="container">
+			<div class="alert bumblebee">
+				<div class="alertSmall menor13">
+						<h1>¡UPS! ERES MENOR DE 13 AÑOS</h1>
+						<p>Lo sentimos solo pueden participar personas mayores</p>
+						<div class="close"><a href="#">CERRAR</a></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+ <!-- ALERTA MENOR 13 AÑOS -->
+
+<!-- ALERTA MENOR 18 AÑOS -->
+	<div class="overlay">
+		<div class="container">
+			<div class="alert bumblebee">
+				<div class="alertSmall menor18">
+						<h1>¡UPS! ERES MENOR DE 18 AÑOS</h1>
+						<p>Si resultas ganador, un adulto responsable o representante legal debe estar presente o enviar autorización para que el premio pueda ser entregado.</p>
+						<div class="close"><a href="#">CERRAR</a></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+ <!-- ALERTA MENOR 18 AÑOS -->
+
+
+<!-- ALERTA RECUPERAR CONTRASEÑA -->
+	<div class="overlay">
+		<div class="container">
+			<div class="alert bumblebee">
+				<div class="alertSmall passSend">
+						<h1>REVISA TU CORREO ELECTRÓNICO</h1>
+						<p>Te hemos enviado los pasos para recuperar tu contraseña.</p>
+						<div class="close"><a href="#">CERRAR</a></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+ <!-- ALERTA RECUPERAR CONTRASEÑA-->
+
+
+<!-- ALERTA MENSAJE MAYOR 140 CARACTERES -->
+	<div class="overlay">
+		<div class="container">
+			<div class="alert bumblebee">
+				<div class="alertSmall over140">
+						<h1>TU MENSAJE NO DEBE SOBREPASAR LOS 140 CARACTERES</h1>
+						<p></p>
+						<div class="close"><a href="#">CERRAR</a></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+ <!-- ALERTA MENSAJE MAYOR 140 CARACTERES-->
+
+
+
+<!-- ALERTA CAPTCHA  -->
+	<div class="overlay">
+		<div class="container">
+			<div class="alert bumblebee">
+				<div class="alertSmall alertCaptcha">
+						<h1>LOS CARACTERES DEL CAPTCHA NO COINCIDEN, INTÉNTALO NUEVAMENTE.</h1>
+						<p></p>
+						<div class="close"><a href="#">CERRAR</a></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+ <!-- ALERTA CAPTCHA -->
+
+
+<!-- ALERTA GROSERÍAS  -->
+	<div class="overlay">
+		<div class="container">
+			<div class="alert bumblebee">
+				<div class="alertSmall profanity">
+						<h1>TU MENSAJE NO DEBE UTILIZAR PALABRAS OBSCEBAS.</h1>
+						<p></p>
+						<div class="close"><a href="#">CERRAR</a></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+ <!-- ALERTA GROSERÍAS -->
+
+
+
+<!-- ALERTA NO GANASTE  -->
+	<div class="overlay">
+		<div class="container">
+			<div class="alert bumblebee">
+				<div class="alertSmall notWin">
+						<h1>¡OUSH! ESTA VEZ NO GANASTE</h1>
+						<p>Pero puedes seguir participando con más códigos por increíbles premios. Adicionalmente con este código quedas participando por el sorteo de ¡más premios!. Debes seguir atento.</p>
+						<div class="close"><a href="#">CERRAR</a></div>
+
+
+						<div class="anotherCode"><a href="#"></a></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+<!-- ALERTA NO GANASTE -->
+
+
+
+<!-- ALERTA VERIFICA TU CÓDIGO  -->
+	<div class="overlay">
+		<div class="container">
+			<div class="alert bumblebee">
+				<div class="alertSmall verifyCode">
+						<h1>¡VERIFICA TU CÓDIGO!</h1>
+						<p>El que acabaste de ingresar no es válido.</p>
+						<div class="close"><a href="#">CERRAR</a></div>
+
+
+						<div class="anotherCode"><a href="#"></a></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+ <!-- ALERTA VERIFICA TU CÓDIGO -->
+
+
+<!-- ALERTA CÓDIGO REGISTRADO -->
+	<div class="overlay">
+		<div class="container">
+			<div class="alert bumblebee">
+				<div class="alertSmall codeRegistered">
+						<h1>LO SENTIMOS</h1>
+						<p>Este código ya ha sido registrado.</p>
+						<div class="close"><a href="#">CERRAR</a></div>
+
+
+						<div class="anotherCode"><a href="#"></a></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+ <!-- ALERTA CÓDIGO REGISTRADO -->
+
+
+
+
+<!-- ALERTA CÓDIGO REGISTRADO -->
+	<div class="overlay">
+		<div class="container">
+			<div class="alert bumblebee">
+				<div class="alertSmall UnregisteredMail">
+						<h1>CORREO NO REGISTRADO</h1>
+						<p>Lo sentimos, el correo electrónico que ingresaste no está registrado, verifícalo e intenta de nuevo o regístrate para participar.</p>
+						<div class="close"><a href="#">CERRAR</a></div>
+
+
+						<div class="anotherCode"><a href="#"></a></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+<!-- ALERTA CÓDIGO REGISTRADO -->
+
+
+<!-- ALERTA GANADOOOOOOR -->
+	<div class="overlay">
+		<div class="container">
+			<div class="alert optimus">
+				<div class="alertSmallWin Win">
+						<div class="Congratulations">¡FELICITACIONES!</div>
+						<h1>GANASTE UNA ENTRADA A CINE PLANET</h1>
+						<p>Revisa tu correo electrónico porque pronto recibirás instrucciones para reclamar tu premio. Adicionalmente con este código quedas participando por el sorteo de más premios! Debes seguir atento.</p>
+						<div class="close"><a href="#">CERRAR</a></div>
+
+
+						<div class="anotherCode"><a href="#"></a></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+<!-- ALERTA GANADOOOOOOR -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- CONTENIDO INTERNAS -->
+	<div class="container">
+		<div class="contenido others">
+			<div class="gridC">
+				<h1>REGÍSTRATE</h1>
+				<h4>Y gana increíbles premios al instante</h4>
+					<h3>Tus datos</h3>
+					<p>Paso 1 de 2</p>
+						<form method="post" id="formStepOne" class="registerOreo">
+						<label>Nombres y apellidos:</label>
+						<input type="text" name="fullname" id="fullname" value="" />
+						</br>
+						<label>Documento de identidad:</label>
+						<input type="text" name="identification" id="identification" value="" />
+						</br>
+						<div class="aaa">
+						<label>Fecha de nacimiento:</label>
+						<select class="day" name="day" id="day" value="">
+						  <option value="">Día</option>
+							<option value="1">10</option>				
+						</select>
+						<select class="month" name="month" id="month" value="">
+						  <option value="">Mes</option>
+							<option value="1">Septiembre</option>	
+						</select>
+						<select class="year" name="year" id="year" value="">
+						  <option value="">Año</option>
+							<option value="1">1987</option>	
+						</select>
+						</div>
+
+						<label>Correo Electrónico:</label>
+						<input type="text" name="email" id="email" value="" />
+						</br>
+						<label>Contraseña:</label>
+						<input type="password" name="pass" id="pass" value="" />
+						</br>
+						<label>Repetir contraseña:</label>
+						<input type="password" name="passto" id="passto" value="" />						
+						<input class="NextForm" type="submit" value="SIGUIENTE">
+						</form>
+				</div>
+		</div>
+	</div>
+<!-- CONTENIDO INTERNAS -->
+
+
+
+
+
+
+<!-- FOOTER -->
+	<div class="footer">
+		<div class="container">
+			<div class="footInfo">
+				<div class="legales"><span class="tyc"><a href="#">Términos y Condiciones</a></span> | <span class="politicas"><a href="#">Políticas de Seguridad</a></span></div>
+				<div class="copyright"><a href="#"> &#169; 2014 PPC. &#174; 2014 Hasbro</a></div>
+			</div>
+			<div class="separadorFooter"></div>
+			<div class="transformersFooter"><a href="#"><img src="images/logo_transformers_cine.png" width="154" height="44"></a></div>
+			<div class="OreoLogoFoot"><a href="#"></a></div>
+		</div>
+	</div>
+<!-- FOOTER -->
+
+
+
+
+
+</body>
+</html>

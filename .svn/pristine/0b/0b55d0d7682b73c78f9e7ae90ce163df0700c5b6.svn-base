@@ -1,0 +1,321 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*Estilos Generales*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+
+/*Estilos del Site*/
+@font-face {
+    font-family: 'block_bq_regularregular';
+    src: url('../fonts/blockbqreg-webfont.eot');
+    src: url('../fonts/blockbqreg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/blockbqreg-webfont.woff') format('woff'),
+         url('../fonts/blockbqreg-webfont.ttf') format('truetype'),
+         url('../fonts/blockbqreg-webfont.svg#block_bq_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{background-color: #000;}
+
+.clear{clear: both;}
+.wrapper{width: 810px; margin:auto; }
+
+#port {
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+      height: 800px;
+    }
+
+/*Estilos para Parallax*/
+.parallax-viewport {
+    position: relative;     /* relative, absolute, fixed */
+    overflow: hidden;
+}
+.parallax-layer {
+    position: absolute;
+    z-index: -1;
+    background-image: url(../images/cielo_compresed.png);
+    background-position: top center;
+    top: 0;
+    width:105%;
+    max-width: 1920px;
+    min-height: 935px;
+    text-indent: -999999em;
+}
+
+.transformers {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    background-image: url(../images/bg_transformers_oreo_compresed.png);
+    background-position: top center;
+    width:100%;
+    max-width: 1920px;
+    min-height: 935px;
+    text-indent: -999999em;
+}
+
+.transformers.inside{background-image: url(../images/bg_inside_oreo.png);}
+
+
+
+/*Header*/
+
+h1{font-family: 'block_bq_regularregular'; font-size: 21px; color:#0d0d0d;}
+h2{font-family: 'block_bq_regularregular'; font-size: 17px; color:#0d0d0d;}
+
+h3{font-family: 'block_bq_regularregular'; font-size: 16px; color:#0d0d0d;}
+h4{font-family: 'Quantico', sans-serif; text-align: left; font-size: 16px; color: #4d4e4e}
+
+p{font-family: 'Quantico', sans-serif; text-align: left; font-size: 14px; color: #4d4e4e; line-height: 1.2}
+
+
+.container{width: 1000px; padding: 0 30px 0 60px; margin: auto; position: relative; }
+
+.header{z-index: 9999; background-image: url(../images/bg_header_oreo.png); width: 100%; height: 152px; background-position: top center;}
+.OreoLogo{margin:12px 0 0 0; vertical-align: top; display: inline-block; *display: inline; zoom:1;}
+.OreoLogo a{width: 193px; height: 87px; display: block; background-image: url(../images/oreo_logo.png);}
+.menu{width: 584px; margin: auto; vertical-align: top; display: inline-block; *display: inline; zoom:1;}
+.transformersLogo{width: 319px; margin:25px auto 0 auto;}
+.transformersLogo a{background-image: url(../images/logo_transformers_cine.png); display: block; width: 319px; height: 79px;}
+
+.menu ul.mainMenu{margin: 15px auto 0 auto; width: 385px; display: block;}
+.menu ul.mainMenu li{text-indent: -999999em;display: inline-block; *display: inline; zoom:1;}
+.menu ul.mainMenu li.awards{margin-left:29px; }
+.menu ul.mainMenu li.faq{margin-left:28px; }
+.menu ul.mainMenu li a{background-image: url(../images/menu_oreo.png);background-repeat: no-repeat; text-indent: -999999em; height: 16px;display: block;}
+.menu ul.mainMenu li.enterCode a{background-position: 0 0; width: 185px; }
+.menu ul.mainMenu li.awards a{background-position: -214px 0; width: 84px;}
+.menu ul.mainMenu li.faq a{background-position: -326px 0; width: 49px;}
+.menu ul.mainMenu li.enterCode a:hover,.menu ul.mainMenu li.enterCode a.active{background-position: 0 -16px;}
+.menu ul.mainMenu li.awards a:hover,.menu ul.mainMenu li.awards a.active{background-position: -214px -16px;}
+.menu ul.mainMenu li.faq a:hover,.menu ul.mainMenu li.faq a.active{background-position: -326px -16px;}
+
+.infoandSocial{position: relative; vertical-align: top; width:215px;display: inline-block; *display: inline; zoom:1;}
+.userSection{ position: absolute; top: 8px; right: 68px; display: none;} 
+.iconSection{position: absolute; right: 0; top: 12px}
+
+.greeting{font-family: 'Quantico', sans-serif; text-align: left;}
+.greeting span.label{font-size: 11px; color: #cccccc;}
+.greeting span.nameUser{font-size: 13px;color: #fff; width: 117px;white-space:nowrap; overflow:hidden; text-overflow: ellipsis; }
+.logout{font-family: 'Quantico', sans-serif; color: #cccccc;font-size: 13px; cursor: pointer; margin: 2px 0 0 0; text-align: right;}
+
+.flags{margin-right:3px; cursor: pointer; vertical-align: top; display: inline-block; *display: inline; zoom:1;}
+.facebook{vertical-align: top; display: inline-block; *display: inline; zoom:1;}
+.facebook a{background-image: url(../images/facebook_oreo.png); width: 23px; height: 23px; display: block; background-repeat: no-repeat;}
+
+
+.footer{z-index: 9999; background-image: url(../images/bg_footer_oreo.png); width: 100%; height: 120px; background-position: top center; position: fixed; bottom: 0}
+
+
+.OreoLogoFoot{position: absolute; top: -20px; right: 110px}
+.OreoLogoFoot a{width: 229px; height: 101px; display: block; background-image: url(../images/oreo_logo_footer.png);}
+
+.footInfo,.separadorFooter,.transformersFooter{vertical-align: top; display: inline-block; *display: inline; zoom:1;}
+
+.footInfo{margin: 68px 0 0 0; width: 232px}
+.separadorFooter{margin: 75px 15px 0 15px; width: 1px; height: 20px; background: #fff;}
+.transformersFooter{margin: 60px 0 0 0}
+
+.legales{color: #fff; font-family: 'Quantico', sans-serif; font-size: 10px;}
+.legales span.tyc a{color: #fff; text-decoration: none}
+.legales span.politicas a{color: #fff; text-decoration: none}
+.copyright{width: 245px; text-align: center; margin-top: 5px}
+.copyright a{color: #fff;text-decoration: none; font-family: 'Quantico', sans-serif; font-size: 10px; text-align: center;}
+
+
+/*Contenido Home*/
+.contenido.home{padding-left: 444px; padding-top: 28px;}
+.contenido.home h1{font-family: 'block_bq_regularregular'; font-size: 17px; color:#0d0d0d;}
+.contenido.others{padding-left: 300px; padding-top: 28px;}
+
+
+ul.mecanicaOreoTransformers{width: 480px; padding-left: 15px; padding-top: 5px; padding-bottom: 15px;}
+ul.mecanicaOreoTransformers li{font-family: 'Quantico', sans-serif; font-size: 13px; list-style-image: url(../images/bullet_oreo.png); padding-top: 5px; line-height: 1.2}
+.enterCodes{margin-bottom: 12px;}
+.createMessage{margin-top: 10px; display: none;}/*Oculto*/
+.enterCodes a{background-image: url(../images/btns_login_oreo.png); width: 253px; height: 46px; background-repeat: no-repeat; display: block; text-indent: -9999em; background-position: 0 0;}
+.createMessage a{background-image: url(../images/btns_login_oreo.png); width: 253px; height: 46px; background-repeat: no-repeat; display: block; text-indent: -9999em; background-position: 0 -139px;}
+.enterCodes a:hover{background-position: 0 -46px;}
+.createMessage a:hover{background-position: 0 -93px;}
+
+.overlay{position: absolute;z-index: 99999;background-image: url(../images/overlay.png); background-repeat: repeat; background-position: top center;width:105%;max-width: 1920px;min-height: 1000px; top:0; display: block; } /*Oculto*/
+
+.alert{width: 560px; margin:auto; height: 490px;background-position:  top center; background-repeat: no-repeat;}
+.alert.optimus{background-image: url(../images/optimus_alert.png); padding-top: 185px; margin-top: 40px;}
+.alert.bumblebee{background-image: url(../images/bumblebee_alert.png); padding-top: 185px; margin-top: 40px;}
+
+
+.alert .alertSmall{width: 420px; height: 265px; background-image: url(../images/bg_alert_oreo.png); background-repeat: no-repeat; padding: 5px 70px }
+
+
+
+.selectCountry{margin: 28px 30px 0 30px}
+.selectCountry h1{text-align: center; margin-bottom: 24px}
+.selectCountry .country{width:172px;  height: 30px; vertical-align: top; display: inline-block; *display: inline; zoom:1;}
+.selectCountry .country a{text-decoration: none;font-family: 'Quantico', sans-serif; font-size: 14px; color: #5b5b5b; }
+
+.selectCountry .country a span.labelCountry:hover{color: #0d266d}
+
+.country span.flag{width: 19px; height: 12px; background-image: url(../images/flags/flags.png); background-repeat: no-repeat;vertical-align: top; display: inline-block; *display: inline; zoom:1;}
+.country span.labelCountry{font-family: 'Quantico', sans-serif; font-size: 14px; color: #5b5b5b; margin-left: 8px; text-decoration: none;}
+.flag.colombia{background-position: 0 0;}
+.flag.peru{background-position: 0 -12px;}
+.flag.honduras{background-position: 0 -24px;}
+.flag.nicaragua{background-position: 0 -36px;}
+.flag.panama{background-position: 0 -48px;}
+.flag.ecuador{background-position: -19px 0;}
+.flag.guatemala{background-position: -19px -12px;}
+.flag.elsalvador{background-position: -19px -24px;}
+.flag.costarica{background-position: -19px -36px;}
+.flag.dominicana{background-position: -19px -48px;}
+
+
+
+
+.contenido.others .register{width: 290px; margin-left:20px; vertical-align: top; display: inline-block; *display: inline; zoom:1;}
+.contenido.others .login{width: 320px; margin-left:50px; vertical-align: top; display: inline-block; *display: inline; zoom:1;}
+
+.contenido.others h1{margin-bottom: 6px;}
+.contenido.others h4{margin-bottom: 20px;}
+.contenido.others .register h3{margin-bottom: 18px;}
+.contenido.others .login h3{margin-bottom: 12px;}
+.contenido.others .login p{font-size: 11px !important}
+
+.registerButton{margin-top: 135px;}
+.loginButton{margin-top: 10px}
+.registerButton a{background-image: url(../images/login_buttons_oreo.png); width: 177px; height: 42px; background-repeat: no-repeat; display: block; text-indent: -9999em; background-position: 0 -42px;}
+.loginButton a{background-image: url(../images/login_buttons_oreo.png); width: 177px; height: 42px; background-repeat: no-repeat; display: block; text-indent: -9999em; background-position: 0 -84px;}
+.registerButton a:hover{background-position: 0 0;}
+.loginButton a:hover{background-position: 0 -126px;}
+
+.forgotPassword{margin-top: 25px;}
+.forgotPassword a{color: #4d4e4e; text-decoration: underline;font-family: 'Quantico', sans-serif; font-size: 10px; }
+.forgotPassword a:hover{color: #0d266d}
+form.loginLanding{width: 230px;}
+form.loginLanding input.loginButton{background-image: url(../images/login_buttons_oreo.png); width: 177px; height: 42px; background-repeat: no-repeat; display: block; text-indent: -9999em; background-position: 0 -84px; border:0; background-color: transparent; cursor: pointer; outline: none;}
+form.loginLanding input.loginButton:hover{background-position: 0 -126px;}
+form.loginLanding input{display:block; width: 229px; height: 20px; border: 1px solid #8eb4d2; margin-bottom: 3px;}
+form.loginLanding label{margin-top: 18px; margin-bottom: 8px; display:block;font-family: 'Quantico', sans-serif; font-size: 14px; color: #16292b; font-weight: bold; }
+form.loginLanding label.error{font-size: 10px; color: #e84343; text-align: right; margin: 0; height: 0px; font-weight: normal !important;}
+
+
+
+
+form.registerOreo{width: 665px;}
+form.registerOreo input.loginButton{background-image: url(../images/login_buttons_oreo.png); width: 177px; height: 42px; background-repeat: no-repeat; display: block; text-indent: -9999em; background-position: 0 -84px; border:0; background-color: transparent; cursor: pointer; outline: none;}
+form.registerOreo input.loginButton:hover{background-position: 0 -126px;}
+form.registerOreo input{width: 248px; height: 20px; border: 1px solid #8eb4d2; margin-bottom: 3px; font-size: 10px; color:#4d4e4e;}
+form.registerOreo label{margin: 18px 10px 8px 0; font-family: 'Quantico', sans-serif; font-size: 13px; color: #16292b; font-weight: bold; width: 160px; text-align: right; display: inline-block; *display: inline; zoom:1;}
+form.registerOreo label.error{font-size: 10px; color: #222121; text-align: left; margin: 0; font-weight: normal !important; background-image: url(../images/bg_alert_register_oreo.png); width: 195px; height: 29px; background-repeat: no-repeat; line-height: 32px; padding-left: 36px; margin-left: 8px;}
+
+form.registerOreo select.day{width: 48px; height: 22px; border: 1px solid #8eb4d2; margin-bottom: 3px;font-size: 12px; color:#4d4e4e; position: absolute;margin-left: 5px; margin-top: 15px}
+form.registerOreo select.month{width: 136px; height: 22px; border: 1px solid #8eb4d2; margin-bottom: 3px;font-size: 12px; color:#4d4e4e; position: absolute;margin-left: 56px; margin-top: 15px}
+form.registerOreo select.year{width: 58px; height: 22px; border: 1px solid #8eb4d2; margin-bottom: 3px;font-size: 12px; color:#4d4e4e; position: absolute; margin-left: 196px; margin-top: 15px}
+
+form.registerOreo select.departamento_region{width: 250px; height: 22px; border: 1px solid #8eb4d2; margin-bottom: 3px;font-size: 12px; color:#4d4e4e;}
+form.registerOreo select.ciudad{width: 250px; height: 22px; border: 1px solid #8eb4d2; margin-bottom: 3px;font-size: 12px; color:#4d4e4e;}
+form.registerOreo textarea{width: 244px; height: 33px; border: 1px solid #8eb4d2; margin-bottom: 3px; vertical-align: text-top;font-size: 12px; color:#4d4e4e;}
+
+form.registerOreo input.NextForm{background-image: url(../images/next_button_oreo.png); width: 177px; height: 42px; background-repeat: no-repeat; display: block; text-indent: -9999em; background-position: 0 -44px; border:0; background-color: transparent; cursor: pointer; outline: none; margin: 20px 0 0 200px}
+form.registerOreo input.NextForm:hover{background-position: 0 -1px;}
+
+form.registerOreo input.RegisterUser{background-image: url(../images/login_buttons_oreo.png); width: 177px; height: 42px; background-repeat: no-repeat; display: block; text-indent: -9999em; background-position: 0 -42px; border: 0; background-color: transparent;margin: 20px 0 0 200px; outline: 0;}
+form.registerOreo input.RegisterUser:hover{background-position: 0 0;}
+
+.contenido.others .gridC p{margin: 0 10px; vertical-align: top; display: inline-block; *display: inline; zoom:1;}
+.contenido.others .gridC h3{margin: 0 0 0 210px; vertical-align: top; display: inline-block; *display: inline; zoom:1;}
+.contenido.others .gridC h1{margin-left: 232px;}
+.contenido.others .gridC h4{margin-left: 150px;}
+
+form.registerOreo .legales{position: relative;margin: 5px 0 0 170px;}
+form.registerOreo .legales input{width: 15px; display: inline-block; *display: inline; zoom:1;}
+
+form.registerOreo .legales .terms{position: absolute;top: 7px;left: 23px; color: #646665; width: 245px;}
+form.registerOreo .legales .terms a{color: #646665}
+
+form.registerOreo input[type="checkbox"] + label.error{ margin: 0 0 0 240px; font-size: 9px; display: inline-block; *display: inline; zoom:1;}
+
+form.registerOreo select.day + label.error{position: absolute; margin-left: 262px; margin-top: 15px}
+form.registerOreo select.month + label.error{position: absolute;margin-left: 262px; margin-top: 15px}
+form.registerOreo select.year + label.error{position: absolute;margin-left: 262px; margin-top: 15px}
+form.registerOreo .aaa{position: relative;}
+
+
+.formCodes{width: 671px; height: 250px; background-image: url(../images/bg_ingrar_codigo_oreo.png); position: relative;margin: 60px 0 0 15px;}
+
+form.enterCodeOreo{width: 210px; margin-top: 30px; display: inline-block; *display: inline; zoom:1;}form.enterCodeOreo{width: 210px; margin-top: 30px; display: inline-block; *display: inline; zoom:1;}
+form.enterCodeOreo.noCaptcha{margin-top: 60px;}
+
+.stickers{position: absolute; bottom: 13px; right: 5px; display: inline-block; *display: inline; zoom:1;}
+
+form.enterCodeOreo input.codeOreo{width:193px; height: 20px;border: 1px solid #8eb4d2; margin: 10px 0 12px 0; }
+form.enterCodeOreo input.CaptchaOreo{width:123px; margin-top: 15px; height: 20px;border: 1px solid #8eb4d2;vertical-align: top; display: inline-block; *display: inline; zoom:1;}
+
+form.enterCodeOreo label.lbl{color: #000;font-family: 'Quantico', sans-serif; font-size: 14px; font-weight: bold;}
+form.enterCodeOreo label.lblsmall{color: #606060;font-family: 'Quantico', sans-serif; font-size: 13px;}
+
+form.enterCodeOreo .codeCaptcha{margin: 20px 7px 0 0; vertical-align: sub; display: inline-block; *display: inline; zoom:1;}
+
+form.enterCodeOreo input.sendCode{background-image: url(../images/send_codes_oreo.png); width: 165px; height: 41px; background-repeat: no-repeat; display: block; text-indent: -9999em; background-position: 0 0; border: 0; background-color: transparent; outline: 0; margin: 22px 0 0 0}
+form.enterCodeOreo input.sendCode:hover{background-position: 0 -40px;}
+.boxCaptcha{position: relative; display: none;}/*Oculto*/
+
